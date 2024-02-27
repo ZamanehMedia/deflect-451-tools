@@ -1,0 +1,22 @@
+{
+  "name": "deflect-451-tools",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "prebuild": "rm -rf dist && mkdir dist",
+    "build": "npm run build:configuration && npm run build:registration && npm run build:servicer-worker",
+    "build:configuration": "cpy src/451-tools-configuration.json dist/ --flat",
+    "build:registration": "cpy src/451-tools-registration.js dist/ --flat && replace-in-file __HASH__ $(md5-file src/451-tools-configuration.json) dist/451-tools-registration.js",
+    "build:servicer-worker": "vite build"
+  },
+  "author": "Zamaneh Media",
+  "devDependencies": {
+    "cpy-cli": "^5.0.0",
+    "eslint": "^8.57.0",
+    "md5-file": "^5.0.0",
+    "more-mirrors": "^2.1.0",
+    "replace-in-file": "^7.1.0",
+    "vite": "^5.1.4",
+    "vite-plugin-eslint": "^1.8.1"
+  }
+}
