@@ -30,6 +30,8 @@ The `--mirrors` argument can accept multiple items, separated by a comma without
 --mirrors='"https://example.com/","https://example.two.com/"'
 ```
 
+If the `--mirrors` argument is not passed, a `__MIRRORS__` placeholder value will be inserted instead in `dist/451-tools-configuration.json`. This placeholder can be used to dynamically replace the mirrors after build time. You must replace this placeholder with the actual mirror URLs at a later moment, using a value like this: `"https://example.com/", "https://example.two.com/"`.
+
 This command will generate the following files:
 
 - `dist/451-tools.js`
