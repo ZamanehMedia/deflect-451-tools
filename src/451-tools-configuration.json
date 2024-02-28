@@ -1,3 +1,24 @@
 {
-  "fallbackPages": {}
+  "fallbackPages": {
+    "customProperties": {
+      "background-color": "#e5dcd4",
+      "border-color": "#4d429a",
+      "card-background-color": "#f8f1ff",
+      "card-box-shadow": "0px 8px 24px rgba(149, 157, 165, 0.2)",
+      "container-width": "1200px",
+      "icon-color": "#4d429a",
+      "primary-color": "#4d429a",
+      "tab-text-color": "#4d429a",
+      "text-color": "#2c1f36"
+    },
+    "templateStrings": {
+      "pageTitle": "451 Tools Dashboard",
+      "pageDescription": "You are on the offline dashboard of 451 Tools. This could be because you are facing an internet shutdown or your device is not connected to the internet. This dashboard keeps information available even when the website is censored or when the internet is down.<br />\r\n",
+      "aboutInnerHTML": "<p>451 Tools helps publishers maintain reach and readership under the most adversarial circumstances.</p>",
+      "copyright": "Copyright \u00a9 2023. All rights reserved."
+    }
+  },
+  "mirroring": {
+    "urls": "__MIRRORS__"
+  }
 }

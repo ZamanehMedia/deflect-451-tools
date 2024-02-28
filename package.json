@@ -5,8 +5,8 @@
   "scripts": {
     "prebuild": "rm -rf dist && mkdir dist",
     "build": "npm run build:configuration && npm run build:registration && npm run build:servicer-worker",
-    "build:configuration": "cpy src/451-tools-configuration.json dist/ --flat",
-    "build:registration": "cpy src/451-tools-registration.js dist/ --flat && replace-in-file __HASH__ $(md5-file src/451-tools-configuration.json) dist/451-tools-registration.js",
+    "build:configuration": "cpy src/451-tools-configuration.json dist/ --flat && replace-in-file \\\"__MIRRORS__\\\" [$npm_config_mirrors] dist/451-tools-configuration.json",
+    "build:registration": "cpy src/451-tools-registration.js dist/ --flat && replace-in-file __HASH__ $(md5-file dist/451-tools-configuration.json) dist/451-tools-registration.js",
     "build:servicer-worker": "vite build"
   },
   "author": "Zamaneh Media",
