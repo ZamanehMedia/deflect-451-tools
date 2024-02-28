@@ -17,5 +17,8 @@
       "aboutInnerHTML": "<p>451 Tools helps publishers maintain reach and readership under the most adversarial circumstances.</p>",
       "copyright": "Copyright \u00a9 2023. All rights reserved."
     }
+  },
+  "mirroring": {
+    "urls": "__MIRRORS__"
   }
 }
