@@ -38,4 +38,4 @@ This command will generate the following files:
 - `dist/451-tools-registration.js`
 - `dist/451-tools-configuration.json`
 
-Make sure to serve all files in the website's root. Import 451-tools-registration.js in every page, either inline it or use a script tag.
+Make sure to serve all files in the website's root. Import `451-tools-registration.js` in every page, either inline it or use a script tag.
