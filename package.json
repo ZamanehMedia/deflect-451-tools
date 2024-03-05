@@ -11,10 +11,10 @@
   },
   "author": "Zamaneh Media",
   "devDependencies": {
+    "451-tools": "^1.0.1",
     "cpy-cli": "^5.0.0",
     "eslint": "^8.57.0",
     "md5-file": "^5.0.0",
-    "more-mirrors": "^2.1.0",
     "replace-in-file": "^7.1.0",
     "vite": "^5.1.4",
     "vite-plugin-eslint": "^1.8.1"
