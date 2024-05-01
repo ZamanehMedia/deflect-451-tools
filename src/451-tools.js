@@ -4,7 +4,9 @@ import {
   registerMirroring,
 } from '451-tools';
 
-const serviceWorkerController = registerServiceWorkerController();
+const serviceWorkerController = registerServiceWorkerController({
+  networkTimeoutSeconds: 3,
+});
 
 registerFallbackPages({ serviceWorkerController });
 registerMirroring({ serviceWorkerController });
