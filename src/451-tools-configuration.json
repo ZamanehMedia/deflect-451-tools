@@ -22,7 +22,7 @@
   "mirroring": {
     "urls": "__MIRRORS__",
     "excludeByPath": [
-      "^/wp-admin/.+?",
+      "^/wp-admin/?.*",
       "^/wp-login\\.php$"
     ]
   }
