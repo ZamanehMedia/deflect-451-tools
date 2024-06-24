@@ -20,9 +20,9 @@
     "showHiddenTabs": true
   },
   "mirroring": {
-    "urls": ["https://sub.farmal.in/"],
+    "urls": [__MIRRORS__],
     "excludeByPath": [
-      "^/wp-admin/.+?",
+      "^/wp-admin/?.*",
       "^/wp-login\\.php$"
     ]
   }
