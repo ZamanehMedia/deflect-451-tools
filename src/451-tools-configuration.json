@@ -20,6 +20,10 @@
     "showHiddenTabs": true
   },
   "mirroring": {
-    "urls": "__MIRRORS__"
+    "urls": "__MIRRORS__",
+    "excludeByPath": [
+      "^/wp-admin/.+$",
+      "^/wp-login\\.php$"
+    ]
   }
 }
