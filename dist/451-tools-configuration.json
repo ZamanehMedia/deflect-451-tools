@@ -22,7 +22,7 @@
   "mirroring": {
     "urls": ["https://sub.farmal.in/"],
     "excludeByPath": [
-      "^/wp-admin/.+$",
+      "^/wp-admin/.+?",
       "^/wp-login\\.php$"
     ]
   }
