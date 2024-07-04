@@ -24,6 +24,7 @@
     "excludeByPath": [
       "^/wp-admin/?.*",
       "^/wp-login\\.php$"
-    ]
+    ],
+    "timeout": "__TIMEOUT__"
   }
 }
