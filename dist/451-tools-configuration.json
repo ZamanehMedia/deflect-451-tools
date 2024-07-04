@@ -25,6 +25,6 @@
       "^/wp-admin/?.*",
       "^/wp-login\\.php$"
     ],
-    "timeout": 3000
+    "timeout": __TIMEOUT__
   }
 }
