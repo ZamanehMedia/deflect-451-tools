@@ -24,13 +24,27 @@ Generate the required files by running the following command:
 npm run build --mirrors='"https://example.com/" --timeout="3000"'
 ```
 
+### `--mirrors` argument
+
 The `--mirrors` argument can accept multiple items, separated by a comma without spaces. For example:
 
 ```
 --mirrors='"https://example.com/","https://example.two.com/"'
 ```
 
-If the `--mirrors` argument is not passed, a `__MIRRORS__` placeholder value will be inserted instead in `dist/451-tools-configuration.json`. This placeholder can be used to dynamically replace the mirrors after build time. You must replace this placeholder with the actual mirror URLs at a later moment, using a value like this: `"https://example.com/", "https://example.two.com/"`.
+If the `--mirrors` argument is not passed, an empty mirror list will be insterted in `dist/451-tools-configuration.json`.
+
+### `--timeout` argument
+
+The `--timeout` argument can accept a number with the desired request timeout in milliseconds. For example:
+
+```
+--timeout=5000
+```
+
+If the `--timeout` argument is not passed, the default timeout of 3,000 milliseconds will be insterted in `dist/451-tools-configuration.json`.
+
+## Output
 
 This command will generate the following files:
 

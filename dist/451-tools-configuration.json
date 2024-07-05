@@ -20,11 +20,11 @@
     "showHiddenTabs": true
   },
   "mirroring": {
-    "urls": [__MIRRORS__],
+    "urls": [],
     "excludeByPath": [
       "^/wp-admin/?.*",
       "^/wp-login\\.php$"
     ],
-    "timeout": __TIMEOUT__
+    "timeout": 5000
   }
 }
