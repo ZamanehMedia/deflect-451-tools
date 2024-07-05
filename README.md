@@ -1,13 +1,13 @@
-# Deflect 451 Tools
+# 451 Tools for Publii
 
-The Deflect 451 Tools package simplifies the process of integrating 451 Tools into Deflect. Follow the steps below to get started:
+The 451 Tools for Publii package simplifies the process of integrating 451 Tools into a Publii website. Follow the steps below to get started:
 
 ## Installation
 
 1. Clone this repository:
 
 ```
-git clone https://github.com/ZamanehMedia/deflect-451-tools.git
+git clone https://github.com/451labs/451-tools-publii-sw.git
 ```
 
 2. Install dependencies:
@@ -21,7 +21,7 @@ npm install
 Generate the required files by running the following command:
 
 ```
-npm run build --mirrors='"https://example.com/"'
+npm run build --mirrors='"https://example.com/" --timeout="3000"'
 ```
 
 The `--mirrors` argument can accept multiple items, separated by a comma without spaces. For example:
