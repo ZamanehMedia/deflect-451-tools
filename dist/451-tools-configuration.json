@@ -19,6 +19,42 @@
     },
     "showHiddenTabs": true
   },
+  "fallbackAssets": {
+    "assets": [
+      {
+        "url": "/assets/css/fontawesome-all.min.css?v=85514f933f9e0b82460af63f1a403fa5",
+        "revision": "1"
+      },
+      {
+        "url": "/assets/css/style.css?v=24bb31859b98d6b6a7dcc254f6803b2e",
+        "revision": "1"
+      },
+      {
+        "url": "/assets/js/breakpoints.min.js?v=81a479eb099e3b187613943b085923b8",
+        "revision": "1"
+      },
+      {
+        "url": "/assets/js/browser.min.js?v=c07298dd19048a8a69ad97e754dfe8d0",
+        "revision": "1"
+      },
+      {
+        "url": "/assets/js/jquery.min.js?v=7c14a783dfeb3d238ccd3edd840d82ee",
+        "revision": "1"
+      },
+      {
+        "url": "/assets/js/main.min.js?v=08add7f6d435054ad38ec38d7cf8be40",
+        "revision": "1"
+      },
+      {
+        "url": "/assets/js/util.min.js?v=cbdaf7c20ac2883c77ae23acfbabd47e",
+        "revision": "1"
+      },
+      {
+        "url": "/assets/webfonts/fa-solid-900.woff2",
+        "revision": "1"
+      }
+    ]
+  },
   "mirroring": {
     "urls": [],
     "excludeByPath": [
