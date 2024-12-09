@@ -10,12 +10,12 @@
         .then(function (registration) {
           return registration.update();
         })
-        .catch(function (error) {
+        .catch(async function (error) {
           console.log('Service worker registration failed:', error);
-          if (navigator.serviceWorker.getRegistrations().length > 0) {
+          if ((await navigator.serviceWorker.getRegistrations()).length > 0) {
             console.log('Forcing a 451 Tools configuration update.');
             return fetch('/451-tools/configuration/update/');
-          }          
+          }
         });
     });
   }
